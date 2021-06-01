@@ -18,8 +18,9 @@ class Snow{
 
         push();
         rotate(angle);
+        translate(pos.x,pos.y);
         imageMode(CENTER)
-        image(this.image, pos.x, pos.y, this.width, this.height);
+        image(this.image, 0,0, this.width, this.height);
         pop();
     }
 }
